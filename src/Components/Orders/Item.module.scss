@@ -1,0 +1,46 @@
+@import "../../SCSS/colors.scss";
+
+.wrapper {
+    margin: 6px;
+    background-color: white;
+    min-height: 131px;
+    min-width: 230px;
+    max-width: 350px;
+    border-radius: 8px;
+    .details {
+        margin-left: 12px;
+        margin-right: 12px;
+        :first-child {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h4 {
+                font-family: 'Fira Sans', sans-serif;
+                margin: 10px 0;
+            }
+            span {
+                font-family: 'Fira Sans', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                letter-spacing: 2px;
+                color: $costFontColor;
+                text-shadow: -1px 0 $costBorder, 0 1px $costBorder, 1px 0 $costBorder, 0 -1px $costBorder;
+            };
+        };
+        :last-child {
+            font-family: 'Fira Sans', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 18px;
+            color: $blue;
+        }
+    };
+    .goods {
+        ul {
+            padding-left: 30px;
+            color: $gray;
+        }
+    };
+}
